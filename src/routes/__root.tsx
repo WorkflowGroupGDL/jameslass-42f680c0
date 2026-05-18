@@ -84,11 +84,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "James Lass — Coach Ejecutivo & Mentor Internacional en Liderazgo Neuroestratégico" },
       { name: "description", content: "Transformo CEOs, ejecutivos y organizaciones mediante liderazgo neuroestratégico, inteligencia emocional aplicada y cultura de alto desempeño. +30 años de experiencia." },
       { name: "author", content: "James Lass" },
-      { property: "og:title", content: "James Lass — Liderazgo Neuroestratégico para CEOs y Ejecutivos" },
-      { property: "og:description", content: "Coach Profesional, Mentor Internacional e Instructor STPS. Acompaño líderes y organizaciones a evolucionar con claridad humana y resultados sostenibles." },
+      { property: "og:title", content: "James Lass — Coach Ejecutivo & Mentor Internacional en Liderazgo Neuroestratégico" },
+      { property: "og:description", content: "Transformo CEOs, ejecutivos y organizaciones mediante liderazgo neuroestratégico, inteligencia emocional aplicada y cultura de alto desempeño. +30 años de experiencia." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "James Lass — Coach Ejecutivo & Mentor Internacional en Liderazgo Neuroestratégico" },
+      { name: "twitter:description", content: "Transformo CEOs, ejecutivos y organizaciones mediante liderazgo neuroestratégico, inteligencia emocional aplicada y cultura de alto desempeño. +30 años de experiencia." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5R2DJaqs0TeiTmT5P5Th2Ari0PC3/social-images/social-1779122429323-android-chrome-512x512.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5R2DJaqs0TeiTmT5P5Th2Ari0PC3/social-images/social-1779122429323-android-chrome-512x512.webp" },
     ],
     links: [
       {
