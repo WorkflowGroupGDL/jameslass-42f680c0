@@ -8,6 +8,15 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 
+import "@fontsource/cormorant-garamond/400.css";
+import "@fontsource/cormorant-garamond/500.css";
+import "@fontsource/cormorant-garamond/600.css";
+import "@fontsource/cormorant-garamond/700.css";
+import "@fontsource/inter/300.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+
 import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
@@ -72,11 +81,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "James Lass — Coach Ejecutivo & Mentor Internacional en Liderazgo Neuroestratégico" },
+      { name: "description", content: "Transformo CEOs, ejecutivos y organizaciones mediante liderazgo neuroestratégico, inteligencia emocional aplicada y cultura de alto desempeño. +30 años de experiencia." },
+      { name: "author", content: "James Lass" },
+      { property: "og:title", content: "James Lass — Liderazgo Neuroestratégico para CEOs y Ejecutivos" },
+      { property: "og:description", content: "Coach Profesional, Mentor Internacional e Instructor STPS. Acompaño líderes y organizaciones a evolucionar con claridad humana y resultados sostenibles." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
