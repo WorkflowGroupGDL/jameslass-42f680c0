@@ -1,12 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import {
-  Outlet,
-  Link,
-  createRootRouteWithContext,
-  useRouter,
-  HeadContent,
-  Scripts,
-} from "@tanstack/react-router";
+import { Outlet, Link, createRootRouteWithContext, useRouter } from "@tanstack/react-router";
 
 import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/500.css";
@@ -16,8 +9,6 @@ import "@fontsource/inter/300.css";
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
-
-import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
   return (
@@ -77,49 +68,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "James Lass — Coach Ejecutivo & Mentor en Liderazgo" },
-      { name: "description", content: "Coach ejecutivo internacional. Transformo CEOs y equipos con liderazgo neuroestratégico e inteligencia emocional. +30 años de experiencia." },
-      { name: "author", content: "James Lass" },
-      { property: "og:title", content: "James Lass — Coach Ejecutivo & Mentor en Liderazgo" },
-      { property: "og:description", content: "Coach ejecutivo internacional. Transformo CEOs y equipos con liderazgo neuroestratégico e inteligencia emocional. +30 años de experiencia." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "James Lass — Coach Ejecutivo & Mentor en Liderazgo" },
-      { name: "twitter:description", content: "Coach ejecutivo internacional. Transformo CEOs y equipos con liderazgo neuroestratégico e inteligencia emocional. +30 años de experiencia." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5R2DJaqs0TeiTmT5P5Th2Ari0PC3/social-images/social-1779122429323-android-chrome-512x512.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5R2DJaqs0TeiTmT5P5Th2Ari0PC3/social-images/social-1779122429323-android-chrome-512x512.webp" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
