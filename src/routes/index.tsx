@@ -257,6 +257,8 @@ function Index() {
                 alt="James Lass — Coach Ejecutivo"
                 width={1024}
                 height={1280}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
